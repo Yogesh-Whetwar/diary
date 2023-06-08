@@ -14,7 +14,7 @@ const DiaryPost = () => {
 
     useEffect (()=>{
         const fetchPost=async()=>{
-            const response=await fetch(`https://diary-api-fw8e.onrender.com/api/posts/${id}`,{
+            const response=await fetch(`https://diary2-cqpv.onrender.com/api/posts/${id}`,{
                 headers:{
                     'Authorization':`Bearer ${user.token}`
                 }

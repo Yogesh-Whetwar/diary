@@ -11,7 +11,7 @@ export const useSignup = () => {
         setError(null);
 
         try {
-            const response = await fetch('http://localhost:7000/api/user/signup', {
+            const response = await fetch('https://diary2-cqpv.onrender.com/api/user/signup', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
