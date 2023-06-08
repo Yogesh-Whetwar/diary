@@ -10,7 +10,7 @@ const PostHead = ({post}) => {
   // console.log(` Posthead title of post is : ${post.title}`);  
   const {user}=useAuthContext();
 const handleClick= async()=>{
-   const response= await fetch(`http://localhost:7000/api/posts/${post._id}`,{
+   const response= await fetch(`https://diary-api-fw8e.onrender.com/api/posts/${post._id}`,{
     method:'DELETE',
     headers:{
       'Authorization':`Bearer ${user.token}`
