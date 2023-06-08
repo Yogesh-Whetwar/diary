@@ -10,7 +10,7 @@ const PostHead = ({post}) => {
   // console.log(` Posthead title of post is : ${post.title}`);  
   const {user}=useAuthContext();
 const handleClick= async()=>{
-   const response= await fetch(`https://diary2-cqpv.onrender.com/api/posts/${post._id}`,{
+   const response= await fetch(`https://diary-ub4b.onrender.com/api/posts/${post._id}`,{
     method:'DELETE',
     headers:{
       'Authorization':`Bearer ${user.token}`
